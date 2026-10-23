@@ -9,7 +9,8 @@ A Rock, Paper, Scissors game where the computer's choice comes from measuring qu
 
 🎬 **Promo video:**
 
-https://github.com/user-attachments/assets/620f27ac-cba0-4968-8f1e-d1d60487870d
+
+https://github.com/user-attachments/assets/f530c34f-847d-41b2-8e63-af5c8e76cd04
 
 
 
