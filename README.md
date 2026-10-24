@@ -7,6 +7,8 @@ A Rock, Paper, Scissors game where the computer's choice comes from measuring qu
 
 👉 **[Open the notebook](quantum_rps.ipynb)**: all the code, results and explanations
 
+🎮 **[Play the game](https://ian-qhamau.github.io/qff26-quantum-rock-paper-scissors/)**: beat Fez, a quantum robot whose moves are my real ibm_fez measurements
+
 🎬 **video:**
 
 
@@ -55,6 +57,9 @@ So `01` (Paper) gets 1/3, and the other 2/3 splits evenly into `00` (Rock) and `
 | `ibm_setup.ipynb` | One-time setup to connect to IBM Quantum for the real-hardware run |
 | `comparison.png` | Chart comparing the approaches |
 | `video demo.mp4` | Short video walkthrough of the project |
+| `docs/index.html` | The playable game (hosted with GitHub Pages) |
+| `docs/quantum_results.json` | The real measurement results the game replays |
+| `export_game_data.ipynb` | Exports those results from my ibm_fez job and Qiskit |
 
 ## Run it yourself
 Open `quantum_rps.ipynb` in qBraid Lab (Qiskit environment), or any Jupyter setup with `qiskit`, `qiskit-aer`, `qiskit-ibm-runtime` and `matplotlib`. Run the cells from top to bottom; the game cells ask for your move in a text box. The real-hardware cells (section 7b) also need a free IBM Quantum account: run `ibm_setup.ipynb` once first. It asks for your API key in a hidden box and saves it privately, so the key never appears in either notebook.
@@ -66,4 +71,4 @@ Open `quantum_rps.ipynb` in qBraid Lab (Qiskit environment), or any Jupyter setu
 - **What surprised me most:** I didn't expect a computer to give a result that should be impossible. Noise made `11` appear even though my circuit can't produce it.
 
 ## AI disclosure
-I used Claude (Anthropic) as a tutor and coding partner: to learn the concepts, get code suggestions with explanations, and word the write-up. I ran, tested and analysed everything myself in qBraid, and all results come from my own runs. I also used Claude Code with the brag plugin to make the promo video. Full details are in the notebook's last section.
+I used Claude (Anthropic) as a tutor and coding partner: to learn the concepts, get code suggestions with explanations, and word the write-up. I ran, tested and analysed everything myself in qBraid, and all results come from my own runs. I also used Claude Code with the brag plugin to make the promo video, and Claude to help design and build the game page. Full details are in the notebook's last section.
