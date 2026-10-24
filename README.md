@@ -48,8 +48,16 @@ So `01` (Paper) gets 1/3, and the other 2/3 splits evenly into `00` (Rock) and `
 - Multiple rounds with a live score, win rate, choice statistics and round-by-round history
 - Safety net: if noise ever produces `11`, the computer measures again
 
+## Files in this repo
+| File | What it is |
+|---|---|
+| `quantum_rps.ipynb` | The main notebook: all code, results and explanations |
+| `ibm_setup.ipynb` | One-time setup to connect to IBM Quantum for the real-hardware run |
+| `comparison.png` | Chart comparing the approaches |
+| `video demo.mp4` | Short video walkthrough of the project |
+
 ## Run it yourself
-Open `quantum_rps.ipynb` in qBraid Lab (Qiskit environment), or any Jupyter setup with `qiskit`, `qiskit-aer`, `qiskit-ibm-runtime` and `matplotlib`. Run the cells from top to bottom; the game cells ask for your move in a text box. The real-hardware cells (section 7b) also need a free IBM Quantum account with a saved API key.
+Open `quantum_rps.ipynb` in qBraid Lab (Qiskit environment), or any Jupyter setup with `qiskit`, `qiskit-aer`, `qiskit-ibm-runtime` and `matplotlib`. Run the cells from top to bottom; the game cells ask for your move in a text box. The real-hardware cells (section 7b) also need a free IBM Quantum account: run `ibm_setup.ipynb` once first. It asks for your API key in a hidden box and saves it privately, so the key never appears in either notebook.
 
 ## What I learned
 - Small samples look uneven. Judging fairness takes thousands of shots.
