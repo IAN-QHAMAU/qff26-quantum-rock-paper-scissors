@@ -38,6 +38,12 @@ Two qubits give 4 results (`00`, `01`, `10`, `11`), but the game only has 3 choi
 
 So `01` (Paper) gets 1/3, and the other 2/3 splits evenly into `00` (Rock) and `10` (Scissors). In an ideal circuit, `11` is impossible.
 
+## Answers to the deeper questions
+1. **How can you make the three choices equally likely?** Throw away `11` and measure again (Approach 2), or build a state with exactly three equal outcomes using `Ry` + controlled-H (Approach 3).
+2. **Why is generating three equally probable states more difficult than two?** An H gate splits a qubit 50/50, so n qubits with H gates give 2ⁿ equally likely outcomes: 2, 4, 8, 16… Two outcomes are easy (one qubit and one H gate make a fair coin), but 3 is not a power of 2, so no number of H gates gives exactly three. Two qubits give four, leaving `11` left over. To get three, you either throw results away (wasteful) or design an uneven split: `Ry` gives 2/3 vs 1/3, and a controlled-H divides the 2/3 in half. That takes more gates, and on real hardware more gates means more noise.
+3. **What happens if you simply map `11` to one of the choices?** That choice gets two of the four results, so it comes up about 50% of the time (Rock 48.9% in my test).
+4. **Could this introduce bias?** Yes. The game becomes predictable: always playing Paper wins about half the games.
+
 ## The game
 - One fresh quantum measurement (`shots=1`) per round
 - Multiple rounds with a live score, win rate, choice statistics and round-by-round history
