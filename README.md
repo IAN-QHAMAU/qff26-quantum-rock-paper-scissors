@@ -7,7 +7,7 @@ A Rock, Paper, Scissors game where the computer's choice comes from measuring qu
 
 👉 **[Open the notebook](quantum_rps.ipynb)**: all the code, results and explanations
 
-🎬 **Promo video:**
+🎬 **video:**
 
 
 https://github.com/user-attachments/assets/ab310997-2902-44aa-b7d1-8d4a92c87d8e
